@@ -27,16 +27,20 @@ namespace NetCorePostgresSqlTelerik
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             services.AddDbContext<ApplicationDbContext>(options =>
                 //options.UseSqlServer(                                         DV:CONFIGURAZIONE NATIVA PER CARICAMENTO DRIVER PER DB MSSQL
                 options.UseNpgsql(
                     Configuration.GetConnectionString("DefaultConnection"))
                 );
 
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
-            
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
+
+
             services.AddControllersWithViews();
+
             services.AddRazorPages();
         }
 
@@ -54,7 +58,8 @@ namespace NetCorePostgresSqlTelerik
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-            app.UseHttpsRedirection();
+
+             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
