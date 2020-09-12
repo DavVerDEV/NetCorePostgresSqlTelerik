@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Davide\\source\\repos\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik.csproj": {}
+    "E:\\Desktop\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Davide\\source\\repos\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik.csproj": {
+    "E:\\Desktop\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Davide\\source\\repos\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik.csproj",
+        "projectUniqueName": "E:\\Desktop\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik.csproj",
         "projectName": "NetCorePostgresSqlTelerik",
-        "projectPath": "C:\\Users\\Davide\\source\\repos\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik.csproj",
+        "projectPath": "E:\\Desktop\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik.csproj",
         "packagesPath": "C:\\Users\\Davide\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Davide\\source\\repos\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik\\obj\\",
+        "outputPath": "E:\\Desktop\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik\\NetCorePostgresSqlTelerik\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -62,6 +62,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "target": "Package",
               "version": "[3.1.6, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[3.1.4, )"
             }
           },
           "imports": [
