@@ -28,10 +28,14 @@ namespace NetCorePostgresSqlTelerik
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
+                //options.UseSqlServer(                                         DV:CONFIGURAZIONE NATIVA PER CARICAMENTO DRIVER PER DB MSSQL
+                options.UseNpgsql(
+                    Configuration.GetConnectionString("DefaultConnection"))
+                );
+
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
