@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30330.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCorePostgresSqlTelerik", "NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik.csproj", "{D53C34C5-15F1-481D-A449-FF25B501CCAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D53C34C5-15F1-481D-A449-FF25B501CCAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D53C34C5-15F1-481D-A449-FF25B501CCAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D53C34C5-15F1-481D-A449-FF25B501CCAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D53C34C5-15F1-481D-A449-FF25B501CCAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E33E5251-D218-4090-8487-871C067B5AE5}
+	EndGlobalSection
+EndGlobal
