@@ -12,6 +12,7 @@ using NetCorePostgresSqlTelerik.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 namespace NetCorePostgresSqlTelerik
 {
@@ -35,9 +36,20 @@ namespace NetCorePostgresSqlTelerik
                 );
 
             services.AddIdentity<IdentityUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultTokenProviders();
+                .AddDefaultUI()
+                .AddEntityFrameworkStores<ApplicationDbContext>();
+            
+            services.AddTransient<IEmailSender, NetCorePostgresSqlTelerik.Services.EmailSender>();
 
+            services.AddKendo();
+
+            services.AddMvc(setupAction =>
+            {
+                setupAction.EnableEndpointRouting = false;
+            }).AddJsonOptions(jsonOptions =>
+            {
+                jsonOptions.JsonSerializerOptions.PropertyNamingPolicy = null;
+            });
 
             services.AddControllersWithViews();
 

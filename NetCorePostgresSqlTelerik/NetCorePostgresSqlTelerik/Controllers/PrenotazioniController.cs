@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Kendo.Mvc.Extensions;
+using Kendo.Mvc.UI;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -11,7 +13,6 @@ using NetCorePostgresSqlTelerik.Models;
 
 namespace NetCorePostgresSqlTelerik.Controllers
 {
-    [Authorize(Roles = "Cliente,Istruttore,Administrator")]
     public class PrenotazioniController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -19,6 +20,39 @@ namespace NetCorePostgresSqlTelerik.Controllers
         public PrenotazioniController(ApplicationDbContext context)
         {
             _context = context;
+        }
+
+        public IActionResult GetPrenotazioni([DataSourceRequest] DataSourceRequest request)
+        {
+            List<Prenotazioni> prenotazioni = new List<Prenotazioni>();
+
+            try
+            {
+                Prenotazioni p1 = new Prenotazioni();
+                p1.idUtente = "1";
+                p1.idCorso = 1;
+                p1.id = 1;
+                prenotazioni.Add(p1);
+
+                Prenotazioni p2 = new Prenotazioni();
+                p2.idUtente = "2";
+                p2.idCorso = 2;
+                p2.id = 2;
+                prenotazioni.Add(p2);
+
+                Prenotazioni p3 = new Prenotazioni();
+                p3.idUtente = "3";
+                p3.idCorso = 3;
+                p3.id = 3;
+                prenotazioni.Add(p3);
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Errore : " + e.Message);
+            }
+
+            return Json(prenotazioni.ToDataSourceResult(request));
         }
 
         // GET: Prenotazioni

@@ -1,0 +1,31 @@
+﻿@using Kendo.Mvc.UI
+@using Microsoft.AspNetCore.Identity
+
+@(Html.Kendo().Grid<IdentityRole>()
+    .Name("grid")
+    .DataSource(dataSource => dataSource
+        .Ajax()
+        .Update(update => update.Action("Update", "Ruoli"))
+        .Read(read => read.Action("Read", "Ruoli"))
+        .Create(create => create.Action("Create", "Ruoli"))
+        .Destroy(delete => delete.Action("Destroy", "Ruoli"))
+        .Model(m =>
+        {
+            m.Id(id => id.Id);
+        })
+    )
+    .ToolBar(t => t.Create())
+    .Columns(columns =>
+    {
+        columns.Bound(p => p.Id);
+        columns.Bound(p => p.Name);
+        columns.Command(c => c.Edit().Text("Modifica"));
+        columns.Command(c => c.Destroy().Text("Elimina"));
+    })
+    .Pageable()
+    .Sortable()
+    .Filterable()
+    .Groupable()
+    .Editable()
+
+)

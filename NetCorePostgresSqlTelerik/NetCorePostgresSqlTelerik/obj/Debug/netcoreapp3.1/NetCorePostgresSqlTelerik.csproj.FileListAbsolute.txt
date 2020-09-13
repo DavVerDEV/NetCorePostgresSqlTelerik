@@ -238,9 +238,6 @@ E:\Desktop\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\NetCorePostgresSq
 E:\Desktop\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 E:\Desktop\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 E:\Desktop\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
-E:\Desktop\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\obj\Debug\netcoreapp3.1\NetCorePostgresSqlTelerik.csproj.CoreCompileInputs.cache
-E:\Desktop\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\obj\Debug\netcoreapp3.1\NetCorePostgresSqlTelerik.MvcApplicationPartsAssemblyInfo.cs
-E:\Desktop\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\obj\Debug\netcoreapp3.1\NetCorePostgresSqlTelerik.MvcApplicationPartsAssemblyInfo.cache
 E:\Desktop\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\obj\Debug\netcoreapp3.1\Razor\Views\Corsi\Create.cshtml.g.cs
 E:\Desktop\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\obj\Debug\netcoreapp3.1\Razor\Views\Corsi\Delete.cshtml.g.cs
 E:\Desktop\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\obj\Debug\netcoreapp3.1\Razor\Views\Corsi\Details.cshtml.g.cs
@@ -289,3 +286,9 @@ E:\Desktop\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\NetCorePostgresSq
 E:\Desktop\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Error.cshtml.g.cs
 E:\Desktop\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 E:\Desktop\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+E:\Desktop\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\obj\Debug\netcoreapp3.1\Razor\Views\Ruoli\Index.cshtml.g.cs
+E:\Desktop\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\bin\Debug\netcoreapp3.1\AutoMapper.dll
+E:\Desktop\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\Desktop\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\obj\Debug\netcoreapp3.1\NetCorePostgresSqlTelerik.csproj.CoreCompileInputs.cache
+E:\Desktop\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\obj\Debug\netcoreapp3.1\NetCorePostgresSqlTelerik.MvcApplicationPartsAssemblyInfo.cs
+E:\Desktop\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\NetCorePostgresSqlTelerik\obj\Debug\netcoreapp3.1\NetCorePostgresSqlTelerik.MvcApplicationPartsAssemblyInfo.cache
